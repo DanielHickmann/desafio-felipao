@@ -16,6 +16,7 @@ let nomeInvalido = nomeJaUtilizado === nickname
 if (nickname === nomeJaUtilizado){
 console.log("ATENCAO!!! Nome ja em utilizacao! Por Favor utilize outro nome:"  )
 
+//Esta estrutura foi finalizada na ultima linha do programa devido ao nome repetido aparecer no ranqueamento
 }else{
     console.log("Seja bem vindo " + nickname)
 
@@ -26,8 +27,8 @@ console.log(nickname + " Parabens! Seu heroi foi criado com sucesso")
 //constante de repeticao (criada para nao precisar escrever toda mes a mesma mensagem para cada nivel de experiencia)
 const nivel = "Parabens voce chegou ao nivel de"
 
+//estrutura de repeticao para adicionar XP aumentando a XP do personagem
 for (i = 0; i <= 7000; i +=2000)
-//variavel de quantidade de XP
 
 if (i <= 1000 ){
     console.log(nickname + " "+
@@ -62,9 +63,10 @@ if (i <= 1000 ){
     nivel + " " +
     "RADIANTE. ")
 }
-//mensagem final (revisao ok)
+//mensagem final
 console.log("O heroi de nome: " + 
 nickname + " " +
 "esta com  " + i +
 " Valor de XP."
 )}
+//finalizado com chaves da condicao IF de verificacao de nome repetido, pois mesmo com nome repetido na logica do ranqueamento o nome era apresentado.
